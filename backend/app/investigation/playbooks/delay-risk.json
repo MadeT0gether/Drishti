@@ -1,0 +1,33 @@
+{
+  "id": "delay-risk-v1",
+  "title": "Delay Risk Review",
+  "description": "Review of projects with significant observed or predicted schedule delay.",
+  "applies_to_factors": ["delay_risk"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Review the schedule position",
+      "guidance": "Compare planned vs actual start and end dates and the predicted delay from the model. Identify which milestones are behind.",
+      "evidence_hint": "Predictions: predicted_delay_days; milestone status"
+    },
+    {
+      "id": "s2",
+      "title": "Identify the delay cause",
+      "guidance": "Request the implementing agency's explanation: land/site issues, funds flow, contractor performance, seasonal factors, statutory clearances.",
+      "evidence_hint": null
+    },
+    {
+      "id": "s3",
+      "title": "Check fund-release timing",
+      "guidance": "Verify whether instalment releases were timely relative to progress; funding gaps are a common recoverable delay cause.",
+      "evidence_hint": "Payment dates vs milestone dates"
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion and follow-up plan",
+      "guidance": "Record the verified cause, a recovery plan or revised timeline if applicable, and whether escalation is warranted.",
+      "evidence_hint": null
+    }
+  ]
+}

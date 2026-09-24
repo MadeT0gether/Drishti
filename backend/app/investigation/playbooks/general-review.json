@@ -1,0 +1,33 @@
+{
+  "id": "general-review-v1",
+  "title": "General Investigation Review",
+  "description": "Baseline review applicable to any case regardless of which risk factors triggered it.",
+  "applies_to_factors": [],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Review the risk assessment and evidence",
+      "guidance": "Read the current risk score, level, evidence strength and every contributing factor with its evidence before acting.",
+      "evidence_hint": "Risk card and factor evidence panels"
+    },
+    {
+      "id": "s2",
+      "title": "Review project fundamentals",
+      "guidance": "Confirm the basic record: sanction, costs, timeline, agency, vendor, location. Note anything inconsistent with the risk evidence.",
+      "evidence_hint": "Project detail page"
+    },
+    {
+      "id": "s3",
+      "title": "Work applicable factor playbooks",
+      "guidance": "For each significant risk factor, complete the matching specialized playbook steps.",
+      "evidence_hint": null
+    },
+    {
+      "id": "s4",
+      "title": "Close with an explicit outcome",
+      "guidance": "Record a neutral outcome (verified issue / no issue found / data corrected / escalated / inconclusive) with written reasons. The decision is yours — AI signals are decision support only.",
+      "evidence_hint": null
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "payment-anomaly-v1",
+  "title": "Payment Pattern Review",
+  "description": "Review of unusual payment patterns: payments before sanction, same-day bursts, or oversized instalments.",
+  "applies_to_factors": ["payment_anomaly"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Identify the flagged payment(s)",
+      "guidance": "From the payment anomaly evidence, identify exactly which payments were flagged and why (before-sanction, burst, oversized relative to milestone weight).",
+      "evidence_hint": "Anomaly result values: payment ids, dates, amounts, rule triggered"
+    },
+    {
+      "id": "s2",
+      "title": "Review payment records against milestones",
+      "guidance": "Compare each flagged payment with the milestone schedule and completion records. Confirm whether the payment corresponds to certified work.",
+      "evidence_hint": "Milestone weights vs cumulative payment share"
+    },
+    {
+      "id": "s3",
+      "title": "Verify sanction timing",
+      "guidance": "For before-sanction flags, confirm the sanction date on record is correct and whether an earlier administrative approval exists.",
+      "evidence_hint": "Sanction date vs payment date"
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion with reasons",
+      "guidance": "State whether the payment pattern is explained by records or requires escalation. Data-entry errors (wrong dates) should be routed as data corrections.",
+      "evidence_hint": null
+    }
+  ]
+}

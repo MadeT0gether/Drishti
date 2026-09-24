@@ -1,0 +1,27 @@
+{
+  "id": "data-quality-v1",
+  "title": "Data Quality Issue Resolution",
+  "description": "Resolution of record-quality problems: missing/invalid coordinates, impossible dates, incomplete records.",
+  "applies_to_factors": ["data_quality"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "List the specific issues",
+      "guidance": "Review each data-quality issue on the project: which field, what is wrong, and its severity.",
+      "evidence_hint": "Data-quality issues: issue_type, field, detail"
+    },
+    {
+      "id": "s2",
+      "title": "Obtain correct values",
+      "guidance": "Request corrected values from the implementing agency or district records (correct dates, actual site coordinates).",
+      "evidence_hint": null
+    },
+    {
+      "id": "s3",
+      "title": "Record the correction outcome",
+      "guidance": "Record what was corrected and note that AI signals should be re-evaluated on the corrected data in the next pipeline run.",
+      "evidence_hint": null
+    }
+  ]
+}

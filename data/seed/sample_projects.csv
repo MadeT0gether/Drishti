@@ -1,0 +1,6 @@
+title,category,state,district,recommended_cost,sanctioned_cost,planned_start,planned_end,latitude,longitude,village,financial_year
+Construction of community hall at Rampur Colony,Community Hall,Maharashtra,Pune,2500000,2300000,2026-01-15,2026-12-15,18.55,73.90,Rampur Colony,2025-26
+Construction of cement concrete road near Shivgaon,Road Construction,Maharashtra,Nashik,1800000,,2026-02-01,2026-10-01,20.02,73.75,Shivgaon,2025-26
+Providing solar street lights at Devnagar,Street Lighting,Karnataka,Mysuru,450000,430000,2026-03-01,2026-07-01,12.28,76.60,Devnagar,2025-26
+Bad row with tiny title,Unknown Category,Maharashtra,Pune,not-a-number,,2026-01-01,2025-01-01,99.0,200.0,,2025-26
+Construction of anganwadi centre building at Kamalwadi,Anganwadi Centre,Maharashtra,Pune,1200000,1100000,2026-04-01,2027-01-31,18.48,73.82,Kamalwadi,2026-27

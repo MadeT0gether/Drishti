@@ -1,0 +1,59 @@
+{
+ "dataset_version": "demo-v2",
+ "seed": 42,
+ "as_of": "2026-08-24",
+ "build_seconds": 41.5,
+ "rows": {
+  "states": 10,
+  "districts": 80,
+  "constituencies": 80,
+  "mps": 80,
+  "project_categories": 12,
+  "implementing_agencies": 320,
+  "vendors": 821,
+  "projects": 25355,
+  "project_locations": 25355,
+  "recommendations": 25355,
+  "sanctions": 23352,
+  "milestones": 90273,
+  "progress_updates": 106818,
+  "payments": 106074,
+  "financial_transactions": 129193
+ },
+ "anomalies_by_type": {
+  "COST_ANOMALY": 405,
+  "PAYMENT_ANOMALY": 280,
+  "PROGRESS_PAYMENT_MISMATCH": 117,
+  "DELAY_ANOMALY": 405,
+  "RECONCILIATION_MISMATCH": 409,
+  "DUPLICATE_PROJECT": 109,
+  "COST_OVERRUN": 250,
+  "NEAR_DUPLICATE_PROJECT": 100,
+  "GEOGRAPHIC_DUPLICATE": 76,
+  "VENDOR_CONCENTRATION": 10,
+  "RELATIONSHIP_ANOMALY": 8,
+  "DATA_QUALITY_ANOMALY": 379
+ },
+ "hard_negatives": 101,
+ "status_distribution": {
+  "completed": 16524,
+  "sanctioned": 2951,
+  "recommended": 2003,
+  "in_progress": 3877
+ },
+ "load_seconds": 260.7,
+ "db_rows": {
+  "project_categories": 12,
+  "implementing_agencies": 320,
+  "vendors": 821,
+  "projects": 25355,
+  "project_locations": 25355,
+  "recommendations": 25355,
+  "sanctions": 23352,
+  "milestones": 90273,
+  "progress_updates": 106818,
+  "payments": 106074,
+  "financial_transactions": 129193,
+  "anomaly_ground_truth": 2649
+ }
+}

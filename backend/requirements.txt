@@ -1,0 +1,34 @@
+fastapi>=0.118
+uvicorn[standard]>=0.37
+sqlalchemy>=2.0.43
+alembic>=1.16
+psycopg[binary]>=3.2.10
+pydantic>=2.12
+email-validator>=2.2
+pydantic-settings>=2.11
+geoalchemy2>=0.18
+pgvector>=0.4
+PyJWT>=2.10
+bcrypt>=5.0
+python-dotenv>=1.1
+python-multipart>=0.0.20
+httpx>=0.28
+pytest>=8.4
+
+# data & ML
+pandas>=2.3
+numpy>=2.3
+scikit-learn>=1.9
+xgboost>=3.0
+networkx>=3.4
+sentence-transformers>=5.0
+
+# Copilot LLM (OPTIONAL at runtime — without a key or this package the Copilot
+# serves the deterministic evidence engine; no API call is ever attempted)
+anthropic>=0.69
+
+# M07 reporting + boundary tooling
+reportlab>=4.2      # investigation PDF generation (pure Python)
+openpyxl>=3.1       # investigation XLSX export (secondary to the PDF)
+pypdf>=5.0          # test-only: extract text to verify generated PDFs
+pyshp>=2.3          # boundary extraction tooling (data/seed/boundaries)

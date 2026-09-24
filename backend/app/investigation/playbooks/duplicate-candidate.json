@@ -1,0 +1,33 @@
+{
+  "id": "duplicate-candidate-v1",
+  "title": "Duplicate Candidate Verification",
+  "description": "Human verification of AI-identified duplicate project candidates. A candidate is never a confirmed duplicate until verified.",
+  "applies_to_factors": ["duplicate_candidate"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Compare the candidate pair",
+      "guidance": "Open both projects side by side. Compare titles, locations, categories, agencies, sanction dates and costs using the similarity evidence.",
+      "evidence_hint": "Similar-projects panel: text similarity, distance (km), cost similarity"
+    },
+    {
+      "id": "s2",
+      "title": "Verify locations on the map",
+      "guidance": "Check whether the two works are genuinely at the same site or are distinct works at nearby locations (e.g. two wards, phases).",
+      "evidence_hint": "Project locations and geo distance"
+    },
+    {
+      "id": "s3",
+      "title": "Check sanction and funding records",
+      "guidance": "If both projects funded the same physical work, identify which sanction is the original and whether double funding occurred.",
+      "evidence_hint": "Sanction records, payments on each project"
+    },
+    {
+      "id": "s4",
+      "title": "Record verified / not-duplicate with reasons",
+      "guidance": "Record the human determination. Legitimate look-alikes (phases, adjacent wards) must be explicitly marked not-duplicate so future reviews inherit the finding.",
+      "evidence_hint": null
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "cost-anomaly-v1",
+  "title": "Cost Anomaly Review",
+  "description": "Structured review when a project's cost deviates significantly from its peer baseline.",
+  "applies_to_factors": ["cost_anomaly"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Compare sanctioned cost against the peer baseline",
+      "guidance": "Review the peer median and deviation shown in the cost risk factor. Confirm the peer group (category, state, financial year) is a fair comparison for this project.",
+      "evidence_hint": "Risk factor evidence: peer_median, robust z-score, deviation_pct"
+    },
+    {
+      "id": "s2",
+      "title": "Verify the project estimate and sanction record",
+      "guidance": "Request or review the detailed cost estimate behind the sanction. Check whether scope, site conditions, or approved revisions explain the higher cost.",
+      "evidence_hint": "Project detail: recommended/sanctioned/revised cost, sanction record"
+    },
+    {
+      "id": "s3",
+      "title": "Check for approved cost revisions",
+      "guidance": "If a revised cost exists, confirm the revision was approved through the prescribed procedure and documented with reasons.",
+      "evidence_hint": "Project detail: revised_cost"
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion with reasons",
+      "guidance": "State whether the cost deviation is explained (site conditions, scope, approved revision) or requires escalation. This is a human determination — the anomaly score alone is not a conclusion.",
+      "evidence_hint": null
+    }
+  ]
+}

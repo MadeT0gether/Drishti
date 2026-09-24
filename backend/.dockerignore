@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+uploads/geotag/*.jpg
+uploads/geotag/*.jpeg
+uploads/geotag/*.png
+uploads/geotag/*.webp
+uploads/geotag/*.svg
+uploads/geotag/*.pdf
+uvicorn.log

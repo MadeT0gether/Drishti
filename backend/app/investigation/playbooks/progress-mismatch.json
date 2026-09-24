@@ -1,0 +1,33 @@
+{
+  "id": "progress-mismatch-v1",
+  "title": "Financial vs Physical Progress Review",
+  "description": "Review when financial utilization runs substantially ahead of reported physical progress.",
+  "applies_to_factors": ["progress_payment_mismatch"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Quantify the gap",
+      "guidance": "Review the utilization percentage against reported physical progress and the size of the gap from the risk factor evidence.",
+      "evidence_hint": "Evidence: financial_utilization_pct, physical_progress_pct, gap"
+    },
+    {
+      "id": "s2",
+      "title": "Verify physical progress",
+      "guidance": "Request the latest measurement-book entries, inspection reports, or site photographs to verify the reported physical progress.",
+      "evidence_hint": "Progress updates history"
+    },
+    {
+      "id": "s3",
+      "title": "Check for front-loaded material procurement",
+      "guidance": "Some works legitimately incur early expenditure (material procurement, mobilization advances). Confirm whether documented advances explain the gap.",
+      "evidence_hint": "Payment records and milestone weights"
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion with reasons",
+      "guidance": "State whether the gap is explained (advances, reporting lag) or the project requires enhanced monitoring/escalation.",
+      "evidence_hint": null
+    }
+  ]
+}

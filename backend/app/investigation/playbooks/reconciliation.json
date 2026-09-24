@@ -1,0 +1,33 @@
+{
+  "id": "reconciliation-v1",
+  "title": "Cross-System Reconciliation Review",
+  "description": "Review when project payments and treasury transactions do not reconcile.",
+  "applies_to_factors": ["reconciliation_mismatch"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Review the reconciliation status",
+      "guidance": "Identify the mismatch type (amount, timing, missing transaction, missing reference) and the expected vs found amounts.",
+      "evidence_hint": "Reconciliation result: status, expected, found, unmatched items"
+    },
+    {
+      "id": "s2",
+      "title": "Check project-code references",
+      "guidance": "Missing references are often clerical: verify whether transactions were booked under a wrong or outdated project code.",
+      "evidence_hint": "Transaction project_code_raw values"
+    },
+    {
+      "id": "s3",
+      "title": "Verify with the disbursing office",
+      "guidance": "For missing or amount-mismatched transactions, request confirmation of actual disbursements from the disbursing office records.",
+      "evidence_hint": null
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion with reasons",
+      "guidance": "Route clerical errors as data corrections; unexplained missing funds flow must be escalated with the documented gap.",
+      "evidence_hint": null
+    }
+  ]
+}

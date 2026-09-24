@@ -1,0 +1,20 @@
+services:
+  postgres:
+    build: ./db
+    container_name: mplads_postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-mplads}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mplads_dev_password}
+      POSTGRES_DB: ${POSTGRES_DB:-mplads}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-mplads} -d ${POSTGRES_DB:-mplads}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:

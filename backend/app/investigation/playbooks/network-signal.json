@@ -1,0 +1,33 @@
+{
+  "id": "network-signal-v1",
+  "title": "Relationship Pattern Review",
+  "description": "Review of unusual vendor/agency relationship patterns: vendor concentration or suspiciously uniform costs.",
+  "applies_to_factors": ["network_signal"],
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "title": "Understand the flagged pattern",
+      "guidance": "Review the network signal detail: vendor share of district projects, or the uniform-cost cluster within an agency-vendor pair.",
+      "evidence_hint": "Network signal detail: vendor share, cluster size, cost CV"
+    },
+    {
+      "id": "s2",
+      "title": "Check procurement context",
+      "guidance": "A high vendor share can be legitimate (few qualified vendors locally, rate contracts). Review how these works were awarded.",
+      "evidence_hint": null
+    },
+    {
+      "id": "s3",
+      "title": "Compare costs within the cluster",
+      "guidance": "For uniform-cost clusters, verify whether the works are genuinely near-identical (standard designs) or should show natural cost variation.",
+      "evidence_hint": "Cluster project list with costs"
+    },
+    {
+      "id": "s4",
+      "title": "Record a conclusion with reasons",
+      "guidance": "Record whether the pattern is explained by procurement context or warrants escalation for a procurement review. Do not name any party as guilty — record observable facts only.",
+      "evidence_hint": null
+    }
+  ]
+}

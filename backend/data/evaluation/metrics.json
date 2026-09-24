@@ -1,0 +1,201 @@
+{
+ "n_projects_evaluable": 23352,
+ "cost_anomaly": {
+  "tp": 171,
+  "fp": 490,
+  "fn": 234,
+  "precision": 0.259,
+  "recall": 0.422,
+  "f1": 0.321,
+  "false_positive_rate": 0.0214
+ },
+ "payment_anomaly": {
+  "tp": 210,
+  "fp": 483,
+  "fn": 70,
+  "precision": 0.303,
+  "recall": 0.75,
+  "f1": 0.432,
+  "false_positive_rate": 0.0209
+ },
+ "progress_payment_mismatch": {
+  "tp": 117,
+  "fp": 125,
+  "fn": 0,
+  "precision": 0.483,
+  "recall": 1.0,
+  "f1": 0.652,
+  "false_positive_rate": 0.0054
+ },
+ "duplicate_detection_pairs": {
+  "tp": 262,
+  "fp": 5378,
+  "fn": 23,
+  "precision": 0.046,
+  "recall": 0.919,
+  "f1": 0.088,
+  "per_type_recall": {
+   "DUPLICATE_PROJECT": 1.0,
+   "NEAR_DUPLICATE_PROJECT": 0.78,
+   "GEOGRAPHIC_DUPLICATE": 0.987
+  },
+  "hard_negatives_total": 101,
+  "hard_negatives_flagged": 9
+ },
+ "duplicate_detection_strong_tier": {
+  "tp": 200,
+  "fp": 655,
+  "fn": 85,
+  "precision": 0.234,
+  "recall": 0.702,
+  "f1": 0.351
+ },
+ "duplicate_ranked_queue": {
+  "precision_at_100": 0.3,
+  "recall_at_100": 0.105,
+  "hard_negatives_in_top_100": 0,
+  "precision_at_200": 0.51,
+  "recall_at_200": 0.358,
+  "hard_negatives_in_top_200": 0,
+  "precision_at_300": 0.413,
+  "recall_at_300": 0.435,
+  "hard_negatives_in_top_300": 1,
+  "precision_at_500": 0.332,
+  "recall_at_500": 0.582,
+  "hard_negatives_in_top_500": 1
+ },
+ "reconciliation": {
+  "tp": 400,
+  "fp": 51,
+  "fn": 9,
+  "precision": 0.887,
+  "recall": 0.978,
+  "f1": 0.93,
+  "false_positive_rate": 0.0022,
+  "per_variant": {
+   "amount_mismatch": {
+    "total": 68,
+    "caught": 68,
+    "recall": 1.0
+   },
+   "timing_mismatch": {
+    "total": 84,
+    "caught": 84,
+    "recall": 1.0
+   },
+   "status_mismatch": {
+    "total": 77,
+    "caught": 68,
+    "recall": 0.883
+   },
+   "missing_transaction": {
+    "total": 106,
+    "caught": 106,
+    "recall": 1.0
+   },
+   "missing_reference": {
+    "total": 74,
+    "caught": 74,
+    "recall": 1.0
+   }
+  }
+ },
+ "data_quality": {
+  "tp": 309,
+  "fp": 70,
+  "fn": 70,
+  "precision": 0.815,
+  "recall": 0.815,
+  "f1": 0.815,
+  "false_positive_rate": 0.003
+ },
+ "vendor_concentration_districts": {
+  "tp": 10,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0
+ },
+ "relationship_patterns_pairs": {
+  "tp": 8,
+  "fp": 6,
+  "fn": 0,
+  "precision": 0.571,
+  "recall": 1.0,
+  "f1": 0.727
+ },
+ "delay_anomaly_ranking": {
+  "precision_at_100": 0.26,
+  "recall_at_100": 0.064,
+  "precision_at_250": 0.316,
+  "recall_at_250": 0.195,
+  "precision_at_500": 0.314,
+  "recall_at_500": 0.388,
+  "truth_in_progress": 405
+ },
+ "delay_model_heldout": {
+  "model": "delay-v0.1",
+  "mae_days": 15.3,
+  "algorithm": "XGBRegressor",
+  "rmse_days": 23.17,
+  "test_rows": 4956,
+  "train_rows": 11516,
+  "feature_importance": {
+   "fin_util": 0.0012,
+   "progress": 0.4684,
+   "n_payments": 0.0009,
+   "category_id": 0.0027,
+   "elapsed_frac": 0.1775,
+   "progress_gap": 0.2841,
+   "sanctioned_cost": 0.005,
+   "planned_duration": 0.0545,
+   "milestones_delayed": 0.0011,
+   "milestone_mean_slip": 0.0016,
+   "agency_id_hist_delay": 0.0015,
+   "district_id_hist_delay": 0.0014
+  },
+  "delayed_gt_60d_classification": {
+   "f1": 0.919,
+   "recall": 0.911,
+   "confusion": {
+    "fn": 173,
+    "fp": 140,
+    "tn": 2879,
+    "tp": 1764
+   },
+   "precision": 0.926
+  }
+ },
+ "overrun_model_heldout": {
+  "f1": 0.994,
+  "model": "overrun-v0.1",
+  "recall": 0.988,
+  "algorithm": "XGBClassifier",
+  "confusion": {
+   "fn": 10,
+   "fp": 0,
+   "tn": 5323,
+   "tp": 791
+  },
+  "precision": 1.0,
+  "test_rows": 6124,
+  "train_rows": 14217,
+  "positive_rate": 0.1276
+ },
+ "risk_ranking": {
+  "precision_at_10": 1.0,
+  "precision_at_50": 1.0,
+  "precision_at_100": 0.99,
+  "precision_at_250": 0.968,
+  "ground_truth_positive_projects": 4122
+ },
+ "dataset_version": "demo-v2",
+ "dataset_seed": 42,
+ "methodology_notes": [
+  "Rule/statistical detectors evaluated on the full dataset (no training step, no leakage).",
+  "Supervised models (delay, overrun) evaluated on a frozen 30% hash split, never trained on.",
+  "Ground truth = injected anomaly ledger; detectors never read the ledger.",
+  "Synthetic-data caveat: injection magnitudes and detector thresholds are both design choices of this prototype; real-world performance requires calibration on real data."
+ ]
+}

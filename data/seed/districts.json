@@ -1,0 +1,104 @@
+{
+  "states": [
+    {"name": "Maharashtra", "code": "MH", "districts": [
+      {"name": "Pune", "lat": 18.52, "lon": 73.86},
+      {"name": "Mumbai Suburban", "lat": 19.08, "lon": 72.88},
+      {"name": "Nagpur", "lat": 21.15, "lon": 79.09},
+      {"name": "Nashik", "lat": 20.0, "lon": 73.79},
+      {"name": "Aurangabad", "lat": 19.88, "lon": 75.34},
+      {"name": "Solapur", "lat": 17.66, "lon": 75.91},
+      {"name": "Kolhapur", "lat": 16.7, "lon": 74.24},
+      {"name": "Amravati", "lat": 20.93, "lon": 77.75}
+    ]},
+    {"name": "Uttar Pradesh", "code": "UP", "districts": [
+      {"name": "Lucknow", "lat": 26.85, "lon": 80.95},
+      {"name": "Varanasi", "lat": 25.32, "lon": 82.99},
+      {"name": "Kanpur Nagar", "lat": 26.45, "lon": 80.33},
+      {"name": "Agra", "lat": 27.18, "lon": 78.01},
+      {"name": "Prayagraj", "lat": 25.44, "lon": 81.85},
+      {"name": "Gorakhpur", "lat": 26.76, "lon": 83.37},
+      {"name": "Meerut", "lat": 28.98, "lon": 77.71},
+      {"name": "Jhansi", "lat": 25.45, "lon": 78.57}
+    ]},
+    {"name": "Karnataka", "code": "KA", "districts": [
+      {"name": "Bengaluru Urban", "lat": 12.97, "lon": 77.59},
+      {"name": "Mysuru", "lat": 12.3, "lon": 76.64},
+      {"name": "Belagavi", "lat": 15.85, "lon": 74.5},
+      {"name": "Kalaburagi", "lat": 17.33, "lon": 76.83},
+      {"name": "Dakshina Kannada", "lat": 12.87, "lon": 74.84},
+      {"name": "Dharwad", "lat": 15.36, "lon": 75.12},
+      {"name": "Shivamogga", "lat": 13.93, "lon": 75.56},
+      {"name": "Tumakuru", "lat": 13.34, "lon": 77.1}
+    ]},
+    {"name": "Tamil Nadu", "code": "TN", "districts": [
+      {"name": "Chennai", "lat": 13.08, "lon": 80.27},
+      {"name": "Coimbatore", "lat": 11.02, "lon": 76.96},
+      {"name": "Madurai", "lat": 9.93, "lon": 78.12},
+      {"name": "Tiruchirappalli", "lat": 10.79, "lon": 78.7},
+      {"name": "Salem", "lat": 11.66, "lon": 78.15},
+      {"name": "Tirunelveli", "lat": 8.71, "lon": 77.76},
+      {"name": "Vellore", "lat": 12.92, "lon": 79.13},
+      {"name": "Thanjavur", "lat": 10.79, "lon": 79.14}
+    ]},
+    {"name": "Rajasthan", "code": "RJ", "districts": [
+      {"name": "Jaipur", "lat": 26.91, "lon": 75.79},
+      {"name": "Jodhpur", "lat": 26.24, "lon": 73.02},
+      {"name": "Udaipur", "lat": 24.58, "lon": 73.71},
+      {"name": "Kota", "lat": 25.21, "lon": 75.86},
+      {"name": "Ajmer", "lat": 26.45, "lon": 74.64},
+      {"name": "Bikaner", "lat": 28.02, "lon": 73.31},
+      {"name": "Alwar", "lat": 27.55, "lon": 76.63},
+      {"name": "Sikar", "lat": 27.61, "lon": 75.14}
+    ]},
+    {"name": "Gujarat", "code": "GJ", "districts": [
+      {"name": "Ahmedabad", "lat": 23.02, "lon": 72.57},
+      {"name": "Surat", "lat": 21.17, "lon": 72.83},
+      {"name": "Vadodara", "lat": 22.31, "lon": 73.19},
+      {"name": "Rajkot", "lat": 22.3, "lon": 70.8},
+      {"name": "Bhavnagar", "lat": 21.76, "lon": 72.15},
+      {"name": "Jamnagar", "lat": 22.47, "lon": 70.07},
+      {"name": "Junagadh", "lat": 21.52, "lon": 70.46},
+      {"name": "Gandhinagar", "lat": 23.22, "lon": 72.65}
+    ]},
+    {"name": "West Bengal", "code": "WB", "districts": [
+      {"name": "Kolkata", "lat": 22.57, "lon": 88.36},
+      {"name": "Howrah", "lat": 22.59, "lon": 88.26},
+      {"name": "Darjeeling", "lat": 27.04, "lon": 88.26},
+      {"name": "Murshidabad", "lat": 24.18, "lon": 88.27},
+      {"name": "Purba Bardhaman", "lat": 23.24, "lon": 87.86},
+      {"name": "Nadia", "lat": 23.47, "lon": 88.55},
+      {"name": "Hooghly", "lat": 22.9, "lon": 88.39},
+      {"name": "Malda", "lat": 25.01, "lon": 88.14}
+    ]},
+    {"name": "Madhya Pradesh", "code": "MP", "districts": [
+      {"name": "Bhopal", "lat": 23.26, "lon": 77.41},
+      {"name": "Indore", "lat": 22.72, "lon": 75.86},
+      {"name": "Jabalpur", "lat": 23.18, "lon": 79.99},
+      {"name": "Gwalior", "lat": 26.22, "lon": 78.18},
+      {"name": "Ujjain", "lat": 23.18, "lon": 75.78},
+      {"name": "Sagar", "lat": 23.84, "lon": 78.74},
+      {"name": "Rewa", "lat": 24.53, "lon": 81.3},
+      {"name": "Ratlam", "lat": 23.33, "lon": 75.04}
+    ]},
+    {"name": "Bihar", "code": "BR", "districts": [
+      {"name": "Patna", "lat": 25.59, "lon": 85.14},
+      {"name": "Gaya", "lat": 24.78, "lon": 85.0},
+      {"name": "Muzaffarpur", "lat": 26.12, "lon": 85.39},
+      {"name": "Bhagalpur", "lat": 25.25, "lon": 87.0},
+      {"name": "Darbhanga", "lat": 26.15, "lon": 85.9},
+      {"name": "Purnia", "lat": 25.78, "lon": 87.47},
+      {"name": "Nalanda", "lat": 25.2, "lon": 85.52},
+      {"name": "Rohtas", "lat": 24.97, "lon": 84.03}
+    ]},
+    {"name": "Kerala", "code": "KL", "districts": [
+      {"name": "Thiruvananthapuram", "lat": 8.52, "lon": 76.94},
+      {"name": "Ernakulam", "lat": 9.98, "lon": 76.28},
+      {"name": "Kozhikode", "lat": 11.25, "lon": 75.78},
+      {"name": "Thrissur", "lat": 10.53, "lon": 76.21},
+      {"name": "Kollam", "lat": 8.89, "lon": 76.61},
+      {"name": "Kannur", "lat": 11.87, "lon": 75.37},
+      {"name": "Alappuzha", "lat": 9.5, "lon": 76.34},
+      {"name": "Palakkad", "lat": 10.78, "lon": 76.65}
+    ]}
+  ]
+}
