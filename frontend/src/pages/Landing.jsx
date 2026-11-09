@@ -295,30 +295,38 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* Neutral schematic preview — no risk framing, no invented figures */}
+          {/* Drill-down navigator — real portal counts, each step links deeper */}
           <div className="lg:col-span-6">
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 space-y-3">
               <div className="flex items-center justify-between text-[10.5px] font-mono text-slate-500 border-b border-slate-200 pb-2.5">
                 <span className="font-bold text-slate-700">STATE → DISTRICT → PROJECT RECORDS</span>
-                <span>Preview</span>
+                <span>Live counts</span>
               </div>
-              <svg className="w-full" viewBox="0 0 500 240" role="img" aria-label="Schematic of drilling down from states to districts to project records">
-                <path d="M 90,60 L 200,95 L 320,65 L 410,130 L 280,190 L 150,165 Z" fill="none" stroke="#cbd5e1" strokeWidth="1.5" strokeDasharray="4 4" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
-                  { x: 90, y: 60 }, { x: 200, y: 95 }, { x: 320, y: 65 },
-                  { x: 410, y: 130 }, { x: 280, y: 190 }, { x: 150, y: 165 },
-                ].map((p, i) => (
-                  <g key={i}>
-                    <circle cx={p.x} cy={p.y} r="7" fill="#1a56db" opacity="0.85" />
-                    <circle cx={p.x} cy={p.y} r="13" fill="none" stroke="#1a56db" strokeWidth="1" opacity="0.25" />
-                  </g>
+                  { step: '01', name: 'Pick a State', count: '10 states', to: '/public/map',
+                    icon: (<path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" />) },
+                  { step: '02', name: 'Open a District', count: '80 districts', to: '/public/map',
+                    icon: (<circle cx="12" cy="12" r="8" />) },
+                  { step: '03', name: 'Read the Record', count: '25,355 records', to: '/public/projects',
+                    icon: (<path d="M6 2h9l5 5v15H6z M14 2v6h6" />) },
+                ].map((s) => (
+                  <Link key={s.step} to={s.to} className="group">
+                    <div className="h-full rounded-xl border border-slate-200 bg-white p-4 space-y-2 transition-all group-hover:border-blue-400 group-hover:shadow-md">
+                      <div className="flex items-center justify-between">
+                        <svg className="h-5 w-5 text-blue-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+                          {s.icon}
+                        </svg>
+                        <span className="text-[9px] font-bold font-mono text-slate-400">{s.step}</span>
+                      </div>
+                      <div className="text-[13px] font-bold text-slate-900">{s.name}</div>
+                      <div className="text-[11px] font-mono font-semibold text-blue-700">{s.count} →</div>
+                    </div>
+                  </Link>
                 ))}
-                <text x="250" y="228" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="monospace">
-                  Choose a state · select a district · open the public records
-                </text>
-              </svg>
+              </div>
               <p className="text-[10px] text-slate-400 font-mono">
-                Illustrative schematic — live figures are in the Geography explorer.
+                Prototype dataset — same records as the Geography explorer.
               </p>
             </div>
           </div>

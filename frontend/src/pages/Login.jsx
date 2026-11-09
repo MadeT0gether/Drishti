@@ -79,6 +79,17 @@ export default function Login() {
 
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#060d1a] px-4 py-10 font-sans text-slate-100 select-none">
+      {/* ── Return home ── */}
+      <Link
+        to="/"
+        className="absolute left-4 top-4 z-20 inline-flex items-center gap-1.5 rounded-lg border border-slate-700/80 bg-slate-900/70 px-3 py-1.5 text-xs font-semibold text-slate-300 backdrop-blur transition-all hover:border-slate-500 hover:text-white sm:left-6 sm:top-6"
+      >
+        <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <line x1="19" y1="12" x2="5" y2="12" />
+          <polyline points="12 19 5 12 12 5" />
+        </svg>
+        <span>Home</span>
+      </Link>
       {/* ── Backdrop: constellation network + bar-chart skyline ── */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <svg className="absolute inset-x-0 top-0 h-[45%] w-full opacity-70" preserveAspectRatio="none" viewBox="0 0 1200 380">

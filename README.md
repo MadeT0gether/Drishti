@@ -2,6 +2,8 @@
 
 **Team BiteCoder · Smart India Hackathon 2026 · Problem Statement 26102**
 
+> **🔗 Live Demo:** https://drishti-bitecoder.vercel.app
+>
 > **Responsible AI:** Risk assessments are decision-support signals, not findings of fraud or misconduct. Final decisions remain with authorized officials.
 
 ---
@@ -26,7 +28,7 @@ Project & Financial Data
   → Executive Analytics (dashboards, maps, health scores, reports)
 ```
 
-All seven milestones (M01–M07) are complete. All data in this prototype is **synthetic**.
+All seven milestones (M01–M07) are complete. Project records are **real MPLADS works from the official eSAKSHI portal** (18th Lok Sabha), compiled from the public [in-rolls/mplads](https://github.com/in-rolls/mplads) dataset — 36 states, 774 districts, 538 constituencies and 88,855 unique works. Fields that the public portal does not publish (payments, vendors, GPS) are not fabricated; detectors that need them are disabled or shown as unavailable.
 
 ---
 
